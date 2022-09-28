@@ -93,7 +93,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-nav {
-  position: relative;
+  position: fixed;
+  opacity: 70%;
   top: 0;
   margin: 0;
   padding: 0;
@@ -261,15 +262,16 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000 !important;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   #gtco-header .text-left {
     text-align: center !important;
+    display: contents;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   #gtco-header .btn {
-    display: block;
-    width: 100%;
+    width: 90%;
+    border-radius: 5px;
   }
 }
 
@@ -585,7 +587,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #gtco-footer {
   background: #262626;
-  padding: 7em 0 0 0 !important;
+  padding: 3em 0 0 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
   float: left;
@@ -595,6 +597,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #gtco-footer .gtco-cta {
   margin-bottom: 30px;
+  display: contents;
 }
 #gtco-footer .gtco-cta h3 {
   color: #fff;
@@ -1101,6 +1104,7 @@ form label {
   height: 25px;
   cursor: pointer;
   text-decoration: none;
+  position: fixed;
 }
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
   background: #444;
@@ -1110,7 +1114,8 @@ form label {
   border-bottom: none !important;
 }
 .gtco-nav-toggle i {
-  position: relative;
+  top: 4%;
+  position: fixed;
   display: inline-block;
   width: 25px;
   height: 2px;
@@ -1884,11 +1889,21 @@ form label {
 	display: flex;
 	justify-content: center;
   align-items: center;
- 
-	
-  
-
-	
+  flex-flow: wrap;
+  width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .logofooter {
+    flex-direction: column;
+  }
+}
+  .logofooter2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding-bottom: 3em;
+  }
 
-/*# sourceMappingURL=style.css.map */
+  /*# sourceMappingURL=style.css.map */
