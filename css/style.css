@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #gtco-footer {
-  background: #262626;
+  background: #ffffff;
   padding: 3em 0 0 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 10px !important;
 }
 #gtco-footer .gtco-copyright {
-  background: #1a1a1a;
+  background: #ffffff;
   padding: 30px 0;
   float: left;
   width: 100%;
